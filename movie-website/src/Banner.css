@@ -38,3 +38,24 @@
 
     );
 }
+
+.banner_button{
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 0.2vw;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: 1rem;
+    padding-top: 0.5rem;
+    background-color: #202020;
+    padding-bottom: 0.5rem;
+
+}
+.banner_button:hover{
+    color: black;
+    background-color: silver;
+    transition: all 0.25s;
+}
