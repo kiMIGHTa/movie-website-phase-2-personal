@@ -15,4 +15,7 @@ const requests = {
 
 export default requests
 
+//"https://api.themoviesdb.org/3/discover/movie?api_key=28e6b6c23fd4ef8b651404603f20637c&with_genres=28`"
+
+
 
