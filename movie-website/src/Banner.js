@@ -9,9 +9,10 @@ function Banner(){
 
    useEffect(()=>{
     async function fetchData(){
-        const request = await axios.get(requests.fetchActionMovies)
-        setMovie(request.data.results[5])
-
+        const request = await axios.get(requests.fetchTrending)
+        setMovie(request.data.results[
+            Math.floor(Math.random()*request.data.results.length-1)
+        ])
         
         
     }
@@ -29,7 +30,7 @@ console.log(movie);
     return <header className="banner"style={{
         backgroundSize: "cover",
         backgroundPosition: "center center",
-        backgroundImage: `url("https://res.cloudinary.com/practicaldev/image/fetch/s--THrf5Yjw--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/n6brz4p7iq7j1mulo1nv.jpg")`
+        backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`
         
     }}>
         <div className='banner_content'>
