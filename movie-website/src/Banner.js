@@ -2,6 +2,11 @@
 import './Banner.css'
 
 function Banner(){
+    function truncate(string, n){
+        return string?.length > n ? string.substr(0, n-1) + "..." : string
+    }
+
+
     return <header className="banner"style={{
         backgroundSize: "cover",
         backgroundPosition: "center center",
@@ -14,7 +19,7 @@ function Banner(){
                 <button className='banner_button'>Play</button>
                 <button className='banner_button'>My List</button>
             </div>
-            <h1 className='banner_description'>Descriptive description</h1>
+            <h1 className='banner_description'>{truncate(`Descriptive description`,150)}</h1>
             <div className='banner--fadeBottom'/>
             
 
