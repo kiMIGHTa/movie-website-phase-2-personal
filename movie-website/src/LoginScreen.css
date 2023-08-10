@@ -1,0 +1,27 @@
+.loginScreen{
+    position: relative;
+    height: 100%;
+}
+
+.login-logo{
+    position: fixed;
+    left: 0;
+    width: 130px;
+    object-fit: contain;
+    padding-left: 20px;
+
+
+}
+
+.sign-up_button{
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    padding: 8px 23px;
+    color: #fff;
+    background-color: #da0b16;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
