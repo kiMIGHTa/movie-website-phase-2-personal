@@ -45,8 +45,8 @@
 .login-body{
     position: absolute;
     top: 30%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-right: 15%;
+    margin-left: 15%;
     text-align: center;
     z-index: 1;
     color: white;
@@ -55,7 +55,43 @@
 
 
 .login-body>h1{
- font-size: 2.2rem;
+ font-size: 3.125rem;
+ font-weight:700;
  margin-bottom: 20px;
+}
+
+.login-body>h2{
+    font-size: 2.0rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+   }
+
+.login-body>h3{
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+   }
+
+.login-input{
+    margin: 20px;
+}
+
+.login-input>form>input{
+    padding: 10px;
+    outline-width: 0;
+    height: 15px;
+    width: 35%;
+    border: none;
+    max-width: 600px;
+   }
+
+.login-getStarted{
+    padding: 10px 16px;
+    border: none;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #da0b16;
+    cursor: pointer;
 }
 
