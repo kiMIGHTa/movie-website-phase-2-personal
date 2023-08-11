@@ -10,7 +10,10 @@ function SignUpScreen(){
     const register = (e)=>{
         e.preventDefault()
 
-        auth.createUserWithEmailAndPassword()
+        auth.createUserWithEmailAndPassword(
+            emailRef.current.value,
+            passwordRef.current.value
+        )
     }
 
     const signIn= (e)=>{
