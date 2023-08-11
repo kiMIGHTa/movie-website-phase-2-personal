@@ -8,6 +8,7 @@ function SignUpScreen(){
             <input type='email' placeholder='Email'/>
             <input type='password' placeholder='Password'/>
             <button type='submit'>Sign In</button>
+            <h4>New to Netflix? Sign up now.</h4>
           </form>
         </div>
     )
