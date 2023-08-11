@@ -1,5 +1,6 @@
 import { useRef } from 'react'
 import './SignUpScreen.css'
+import { auth } from './firebase'
 
 function SignUpScreen(){
     const emailRef = useRef(null)
@@ -8,6 +9,8 @@ function SignUpScreen(){
 
     const register = (e)=>{
         e.preventDefault()
+
+        auth.createUserWithEmailAndPassword()
     }
 
     const signIn= (e)=>{
@@ -21,8 +24,8 @@ function SignUpScreen(){
         <div className="signUpScreen">
           <form>
             <h1>Sign In</h1>
-            <input type='email' placeholder='Email'/>
-            <input type='password' placeholder='Password'/>
+            <input ref={emailRef} type='email' placeholder='Email'/>
+            <input ref={passwordRef} type='password' placeholder='Password'/>
             <button type='submit' onClick={signIn}>Sign In</button>
             <h4>
                 <span className='signUpScreen_gray'>New to Netflix? </span> 
